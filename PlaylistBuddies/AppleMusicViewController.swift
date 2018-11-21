@@ -8,6 +8,7 @@
 
 import UIKit
 import StoreKit
+import MediaPlayer
 
 //TODO: Change the entry point before committing anything!!
 class AppleMusicViewController: UIViewController, SKCloudServiceSetupViewControllerDelegate {
@@ -53,11 +54,13 @@ class AppleMusicViewController: UIViewController, SKCloudServiceSetupViewControl
     func getCapabilities()  {
         let controller = SKCloudServiceController()
         controller.requestCapabilities { (musicCapability, error) in
-            if musicCapability == SKCloudServiceCapability.musicCatalogPlayback {
+            if musicCapability.contains(SKCloudServiceCapability.musicCatalogPlayback) {
                 print("the device allows playback of apple music catolog tracks.")
-            } else if musicCapability == SKCloudServiceCapability.musicCatalogSubscriptionEligible {
+            }
+            if musicCapability.contains(SKCloudServiceCapability.musicCatalogSubscriptionEligible) {
                 print("the device allows subscription to the apple music catalog.")
-            } else if musicCapability == SKCloudServiceCapability.addToCloudMusicLibrary {
+            }
+            if musicCapability.contains(SKCloudServiceCapability.addToCloudMusicLibrary) {
                 print("the device allows tracks to be added to the user's music library.")
             } else {
                 print("I guess you have no capabilites.")
