@@ -1,0 +1,6 @@
+framework module Pods_PlaylistBuddies {
+  umbrella header "Pods-PlaylistBuddies-umbrella.h"
+
+  export *
+  module * { export * }
+}

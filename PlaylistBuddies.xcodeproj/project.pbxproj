@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50FCCE87C9EC50234EACDD76 /* Pods_PlaylistBuddies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B495B10D5D9BE7164259E60 /* Pods_PlaylistBuddies.framework */; };
 		D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */; };
+		FC6D380B21AC97850099DB3D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */; };
+		FC6D380D21AC9A760099DB3D /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380C21AC9A760099DB3D /* Song.swift */; };
 		FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77653421A370FE00D94953 /* AppDelegate.swift */; };
 		FC77653721A370FE00D94953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77653621A370FE00D94953 /* ViewController.swift */; };
 		FC77653A21A370FE00D94953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC77653821A370FE00D94953 /* Main.storyboard */; };
@@ -16,7 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B495B10D5D9BE7164259E60 /* Pods_PlaylistBuddies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaylistBuddies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A189F3BC74475827B955B8 /* Pods-PlaylistBuddies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuddies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies.debug.xcconfig"; sourceTree = "<group>"; };
+		D25087C721C8E97F8A82B309 /* Pods-PlaylistBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuddies.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies.release.xcconfig"; sourceTree = "<group>"; };
 		D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicViewController.swift; sourceTree = "<group>"; };
+		FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		FC6D380C21AC9A760099DB3D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		FC77653121A370FE00D94953 /* PlaylistBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC77653421A370FE00D94953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC77653621A370FE00D94953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FCCE87C9EC50234EACDD76 /* Pods_PlaylistBuddies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02A674577A472947D0A3B16B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7A189F3BC74475827B955B8 /* Pods-PlaylistBuddies.debug.xcconfig */,
+				D25087C721C8E97F8A82B309 /* Pods-PlaylistBuddies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB8020CAC9E55F36916E4C54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B495B10D5D9BE7164259E60 /* Pods_PlaylistBuddies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC77652821A370FE00D94953 = {
 			isa = PBXGroup;
 			children = (
 				FC77653321A370FE00D94953 /* PlaylistBuddies */,
 				FC77653221A370FE00D94953 /* Products */,
+				02A674577A472947D0A3B16B /* Pods */,
+				FB8020CAC9E55F36916E4C54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				FC77653D21A370FF00D94953 /* LaunchScreen.storyboard */,
 				FC77654021A370FF00D94953 /* Info.plist */,
 				D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */,
+				FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */,
+				FC6D380C21AC9A760099DB3D /* Song.swift */,
 			);
 			path = PlaylistBuddies;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC77654321A370FF00D94953 /* Build configuration list for PBXNativeTarget "PlaylistBuddies" */;
 			buildPhases = (
+				0D4DFCA4B7385EE582917ECE /* [CP] Check Pods Manifest.lock */,
 				FC77652D21A370FE00D94953 /* Sources */,
 				FC77652E21A370FE00D94953 /* Frameworks */,
 				FC77652F21A370FE00D94953 /* Resources */,
+				8F6D85F3F4F623869120BF9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +165,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D4DFCA4B7385EE582917ECE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaylistBuddies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F6D85F3F4F623869120BF9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC77652D21A370FE00D94953 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6D380B21AC97850099DB3D /* PlaylistViewController.swift in Sources */,
 				FC77653721A370FE00D94953 /* ViewController.swift in Sources */,
 				FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */,
 				D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */,
+				FC6D380D21AC9A760099DB3D /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +367,7 @@
 		};
 		FC77654421A370FF00D94953 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A189F3BC74475827B955B8 /* Pods-PlaylistBuddies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +386,7 @@
 		};
 		FC77654521A370FF00D94953 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25087C721C8E97F8A82B309 /* Pods-PlaylistBuddies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
