@@ -7,4 +7,5 @@ target 'PlaylistBuddies' do
 
   # Pods for PlaylistBuddies
 	pod 'AWSDynamoDB', '~> 2.6.13'
+	pod 'AWSMobileClient', '~> 2.6.13'
 end

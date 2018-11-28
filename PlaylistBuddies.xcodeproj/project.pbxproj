@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50FCCE87C9EC50234EACDD76 /* Pods_PlaylistBuddies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B495B10D5D9BE7164259E60 /* Pods_PlaylistBuddies.framework */; };
 		D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */; };
+		FC5FC75421AE237B007EB830 /* PlaylistAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */; };
 		FC6D380B21AC97850099DB3D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */; };
 		FC6D380D21AC9A760099DB3D /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380C21AC9A760099DB3D /* Song.swift */; };
 		FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77653421A370FE00D94953 /* AppDelegate.swift */; };
@@ -23,6 +24,11 @@
 		B7A189F3BC74475827B955B8 /* Pods-PlaylistBuddies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuddies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies.debug.xcconfig"; sourceTree = "<group>"; };
 		D25087C721C8E97F8A82B309 /* Pods-PlaylistBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaylistBuddies.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies.release.xcconfig"; sourceTree = "<group>"; };
 		D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicViewController.swift; sourceTree = "<group>"; };
+		FC5FC72721ACF590007EB830 /* AWSAuthCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSAuthCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FC72921ACF593007EB830 /* AWSMobileClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSMobileClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FC72B21ACF596007EB830 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FC72D21ACF599007EB830 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistAPI.swift; sourceTree = "<group>"; };
 		FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		FC6D380C21AC9A760099DB3D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		FC77653121A370FE00D94953 /* PlaylistBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +64,10 @@
 		FB8020CAC9E55F36916E4C54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC5FC72D21ACF599007EB830 /* AWSDynamoDB.framework */,
+				FC5FC72B21ACF596007EB830 /* AWSCore.framework */,
+				FC5FC72921ACF593007EB830 /* AWSMobileClient.framework */,
+				FC5FC72721ACF590007EB830 /* AWSAuthCore.framework */,
 				2B495B10D5D9BE7164259E60 /* Pods_PlaylistBuddies.framework */,
 			);
 			name = Frameworks;
@@ -93,6 +103,7 @@
 				D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */,
 				FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */,
 				FC6D380C21AC9A760099DB3D /* Song.swift */,
+				FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */,
 			);
 			path = PlaylistBuddies;
 			sourceTree = "<group>";
@@ -197,15 +208,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlaylistBuddies/Pods-PlaylistBuddies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,6 +238,7 @@
 				FC77653721A370FE00D94953 /* ViewController.swift in Sources */,
 				FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */,
 				D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */,
+				FC5FC75421AE237B007EB830 /* PlaylistAPI.swift in Sources */,
 				FC6D380D21AC9A760099DB3D /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
