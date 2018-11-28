@@ -22,6 +22,14 @@ class AppleMusicViewController: UIViewController, SKCloudServiceSetupViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        PlaylistAPI.get_playlist(name: "test_playlist", password: "test", completion: {
+            (data) in
+            if let data = data{
+            }
+        })
+            
+    
     }
     
     func cloudServiceSetupViewControllerDidDismiss(_ cloudServiceSetupViewController: SKCloudServiceSetupViewController) {

@@ -12,10 +12,5 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlaylistAPI.get_playlist(completion: {
-            (data) in
-            if let data = data{
-            }
-        })
     }
 }

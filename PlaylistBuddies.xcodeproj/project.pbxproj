@@ -11,7 +11,7 @@
 		D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */; };
 		FC5FC75421AE237B007EB830 /* PlaylistAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */; };
 		FC6D380B21AC97850099DB3D /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */; };
-		FC6D380D21AC9A760099DB3D /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380C21AC9A760099DB3D /* Song.swift */; };
+		FC6D380D21AC9A760099DB3D /* not_song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D380C21AC9A760099DB3D /* not_song.swift */; };
 		FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77653421A370FE00D94953 /* AppDelegate.swift */; };
 		FC77653721A370FE00D94953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC77653621A370FE00D94953 /* ViewController.swift */; };
 		FC77653A21A370FE00D94953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC77653821A370FE00D94953 /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 		FC5FC72D21ACF599007EB830 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistAPI.swift; sourceTree = "<group>"; };
 		FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
-		FC6D380C21AC9A760099DB3D /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		FC6D380C21AC9A760099DB3D /* not_song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = not_song.swift; sourceTree = "<group>"; };
 		FC77653121A370FE00D94953 /* PlaylistBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC77653421A370FE00D94953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC77653621A370FE00D94953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				FC77654021A370FF00D94953 /* Info.plist */,
 				D985D82C21A54A02000D8FCA /* AppleMusicViewController.swift */,
 				FC6D380A21AC97850099DB3D /* PlaylistViewController.swift */,
-				FC6D380C21AC9A760099DB3D /* Song.swift */,
+				FC6D380C21AC9A760099DB3D /* not_song.swift */,
 				FC5FC75321AE237B007EB830 /* PlaylistAPI.swift */,
 			);
 			path = PlaylistBuddies;
@@ -239,7 +239,7 @@
 				FC77653521A370FE00D94953 /* AppDelegate.swift in Sources */,
 				D985D82D21A54A02000D8FCA /* AppleMusicViewController.swift in Sources */,
 				FC5FC75421AE237B007EB830 /* PlaylistAPI.swift in Sources */,
-				FC6D380D21AC9A760099DB3D /* Song.swift in Sources */,
+				FC6D380D21AC9A760099DB3D /* not_song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
